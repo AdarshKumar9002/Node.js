@@ -1,0 +1,16 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/forms.css">
+<link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+<%- include('includes/header.ejs') %>
+<main>
+    <form class="product-form" action="/add-name" method="POST">
+        <div class="form-control">
+          <label for="title">Name</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>   
+</main>
+<%- include('includes/end.ejs') %>
